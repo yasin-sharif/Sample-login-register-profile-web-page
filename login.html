@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		 
+		<script src="js/login.js"></script> 
+		<link href="css/login.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid p-0">
+		<img src='assets/background_img.jpg'  id='bck_img'>
+		<div class="container col-8" id="view">
+			<div class="container center bg-white" id="login-container">
+				<div class="m-3">
+					<h1 id="subject">Login</h1>
+				</div>
+
+				<div class="m-3">
+					<label class="form-label">Email address</label>
+					<input type="email" class="form-control" id="email" onkeyup="validate_email(this.value)">
+					<p id="err-email"></p>
+				</div>
+				<div class="m-3">
+					<label class="form-label">Password</label>
+					<input type="password" class="form-control" id="password" onkeyup="validate_password(this.value)">
+					<p id="err-pass"></p>
+				</div>
+				<div class="m-3 mt-5">
+				<div class="row">
+					<div class="col"  onmouseenter="validate_fields()">
+					<button type="submit" id="login-button" onclick="login_check()" class="button" disabled="true">Login</button>
+					</div>
+					<div class="col">
+					<a href="register.html">Need to Sign in?</a>
+					</div>
+				</div>
+				<p id="err-login"></p>
+				</div>
+				
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
