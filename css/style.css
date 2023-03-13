@@ -1,0 +1,23 @@
+body
+{
+margin: 0;
+padding: 0%;
+background-color: blanchedalmond;
+}
+
+
+
+.indexx
+{   
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    margin-top: 20%;
+    margin-left: 50%;
+    font-size: 2rem;
+    border: 10%;
+    padding: 2rem;
+    border: 5cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+}

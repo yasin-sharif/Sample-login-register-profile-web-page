@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,70,0.8),rgba(0,0,70,0.8)),url(mountain.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+}
+
+#login{
+    margin-right: 10%;
+}
+.input-field{
+    background: #eaeaea;
+    margin: 20px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    max-height: 40px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 15px 12px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+
+
+
+.input-group{
+    height: 200px;
+}
+
+#subject{
+    text-align:center;
+    color:#ff9900;
+    font-size: 5vh;
+}  
+.button{
+    border-radius: 30px;
+    border: none;
+    background-color: #33cc33;
+    color: white;
+    width: 80px;
+    height: 40px;
+    box-shadow: 3px 3px 4px black;
+}
+.button:disabled{
+    background-color: #ff6666;
+}
+.button:active{
+    box-shadow: none;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+#bck_img{
+    width: 100%;
+    height:100vh;    
+    background-position: center;
+    background-size: cover;
+}
